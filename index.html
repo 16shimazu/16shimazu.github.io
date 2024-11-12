@@ -26,18 +26,8 @@
 <body>
     <div class="profile">
         <h1>Name: sulfur</h1>
-		<p>born: </p><p id="time-ago"></p>
-
-        <script>
-            const june182008 = Math.floor(new Date('2008-06-18').getTime() / 1000);
-            function timeAgo(timestamp) {
-                const now = Math.floor(Date.now() / 1000);
-                const differenceInSeconds = now - timestamp;
-                const yearsAgo = Math.floor(differenceInSeconds / (365 * 24 * 60 * 60));
-                return `${yearsAgo} years ago`;
-            }
-        document.getElementById("time-ago").textContent = timeAgo(june182008);
-    </script>
+        <p id="time-ago">born: </p>
+        <script>const birthdate = Math.floor(new Date('2008-06-18').getTime() / 1000);function timeAgo(timestamp) {const now = Math.floor(Date.now() / 1000);const differenceInSeconds = now - timestamp;const yearsAgo = Math.floor(differenceInSeconds / (365 * 24 * 60 * 60));return `${yearsAgo} years ago`;}document.getElementById("time-ago").textContent += timeAgo(birthdate);</script>
         <p>Pronouns: she/it</p>
         <p>Discord Username: sulfur.shimazu</p>
     </div>
