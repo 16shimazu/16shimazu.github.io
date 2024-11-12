@@ -1,3 +1,3 @@
-**pronouns**: she/it
-discord: `sulfur.shimazu`
+**pronouns**: she/it<br/>
+discord: `sulfur.shimazu`<br/>
 WIP :)
