@@ -26,9 +26,13 @@
 <body>
     <div class="profile">
         <h1>Name: sulfur</h1>
-        <p id="time-ago">born: </p><script>const birthdate = Math.floor(new Date('2008-06-18').getTime() / 1000);function timeAgo(timestamp) {const now = Math.floor(Date.now() / 1000);const differenceInSeconds = now - timestamp;const yearsAgo = Math.floor(differenceInSeconds / (365 * 24 * 60 * 60));return `${yearsAgo} years ago`;}document.getElementById("time-ago").textContent += timeAgo(birthdate);</script>
-        <p>Pronouns: she/it</p>
-        <p>Discord Username: sulfur.shimazu</p>
+		<p>Pronouns: she/it</p>
+        <p id="time-ago">Born: </p><script>const birthdate = Math.floor(new Date('2008-06-18').getTime() / 1000);function timeAgo(timestamp) {const now = Math.floor(Date.now() / 1000);const differenceInSeconds = now - timestamp;const yearsAgo = Math.floor(differenceInSeconds / (365 * 24 * 60 * 60));return `${yearsAgo} years ago`;}document.getElementById("time-ago").textContent += timeAgo(birthdate);</script>
+        <p id="cdtTime"></p><script>function updateCDTTime(){let now=new Date(),options={timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false},[date,time]=new Intl.DateTimeFormat('en-US',options).format(now).split(", ");document.getElementById("cdtTime").textContent=`Timezone: CDT (${date}, ${time})`;}setInterval(updateCDTTime,1000);updateCDTTime();</script>
+		<p>Discord Username: sulfur.shimazu</p>
+		<p>Interests: MCU / Python / LoL Arcane / Cyberpunk Edgerunners / Terraria</p>
+		<p>Valve's Portal / Fight Club / Girl Interrupted / Postal / Minecraft</p>
+        <p>District 9 / AHK / Emulation (GB/GBC/GBA)</p>
     </div>
 </body>
 </html>
