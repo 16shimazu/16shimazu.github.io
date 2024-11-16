@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <meta name="description" content="I literally f*cking love eating rocks. Nothing brings me more joy than eating rocks. Eating rocks is love, Eating rocks is life." />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .profile {
+            text-align: center;
+        }
+        h1, p {
+            margin: 0.5em 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <h1>Name: sulfur</h1>
+		<p>Pronouns: she/it</p>
+        <p id="time-ago">Born: </p><script>const birthday = Math.floor(new Date('2008-06-18').getTime() / 1000);function timeAgo(timestamp) {const now = Math.floor(Date.now() / 1000);const differenceInSeconds = now - timestamp;const yearsAgo = Math.floor(differenceInSeconds / (365 * 24 * 60 * 60));return `${yearsAgo} years ago`;}document.getElementById("time-ago").textContent += timeAgo(birthday);</script>
+        <p id="cdtTime"></p><script>function updateCDTTime(){let now=new Date(),options={timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false},[date,time]=new Intl.DateTimeFormat('en-US',options).format(now).split(", ");document.getElementById("cdtTime").textContent=`Timezone: CDT (${date}, ${time})`;}setInterval(updateCDTTime,1000);updateCDTTime();</script>
+		<p>Discord Username: sulfur.shimazu</p>
+		<p>❤ Movies/Shows: MCU, LoL Arcane, Cyberpunk Edgerunners, Fight Club</p>
+		<p>❤ Games: Postal, Minecraft, Portal, Terraria, GB/GBC/GBA Emulation</p> 
+		<p>Languages: English / Python / AHK</p>
+		<br><p id="visitorCount">Visitor Count: </p><script>function _0x16fd(_0x5a927b,_0x1f838d){const _0xd640cb=_0xd640();return _0x16fd=function(_0x16fdf0,_0x99e728){_0x16fdf0=_0x16fdf0-0x1e2;let _0x4035a7=_0xd640cb[_0x16fdf0];return _0x4035a7;},_0x16fd(_0x5a927b,_0x1f838d);}const _0x6194cb=_0x16fd;(function(_0x21b0f1,_0x313585){const _0x5f29e8=_0x16fd,_0x579fc6=_0x21b0f1();while(!![]){try{const _0x55eabf=parseInt(_0x5f29e8(0x1ef))/0x1*(parseInt(_0x5f29e8(0x1ed))/0x2)+parseInt(_0x5f29e8(0x1e2))/0x3*(-parseInt(_0x5f29e8(0x1e3))/0x4)+-parseInt(_0x5f29e8(0x1f3))/0x5*(-parseInt(_0x5f29e8(0x1e9))/0x6)+-parseInt(_0x5f29e8(0x1e6))/0x7+-parseInt(_0x5f29e8(0x1ec))/0x8*(parseInt(_0x5f29e8(0x1f0))/0x9)+parseInt(_0x5f29e8(0x1eb))/0xa*(parseInt(_0x5f29e8(0x1e5))/0xb)+-parseInt(_0x5f29e8(0x1e4))/0xc;if(_0x55eabf===_0x313585)break;else _0x579fc6['push'](_0x579fc6['shift']());}catch(_0x31ba9f){_0x579fc6['push'](_0x579fc6['shift']());}}}(_0xd640,0x18bd1));function _0xd640(){const _0x6e294d=['?action=get','315219HOPTpy','4ZSoCRr','222684pAIsqf','22QssdKU','134680ZRfOKT','json','?action=increment','1109904cfJPmm','Visitor\x20Count:\x20','817630hUJNem','3352wotTJD','42uPrWCt','textContent','2076mMmoAw','3177JgChnP','setItem','getItem','5aZOHXZ','getElementById','https://script.google.com/macros/s/AKfycbxPVWVmqMu8VA_Woh6zzMSEB9sxComLztqj5AA6aW1GXNMZ6kb8F-sFXPppc9Jx1Ec/exec','visitorCount'];_0xd640=function(){return _0x6e294d;};return _0xd640();}const VISITOR_KEY='hasVisited',API_URL=_0x6194cb(0x1f5);async function getVisitorCount(){const _0x4e95b=_0x6194cb,_0x599889=await fetch(API_URL+_0x4e95b(0x1f7));return(await _0x599889[_0x4e95b(0x1e7)]())[_0x4e95b(0x1f6)];}async function incrementVisitorCount(){const _0xd5b9a=_0x6194cb,_0xc63ef=await fetch(API_URL+_0xd5b9a(0x1e8));return(await _0xc63ef[_0xd5b9a(0x1e7)]())[_0xd5b9a(0x1f6)];}async function updateVisitorCount(){const _0x42348b=_0x6194cb;!localStorage[_0x42348b(0x1f2)](VISITOR_KEY)?(localStorage[_0x42348b(0x1f1)](VISITOR_KEY,'true'),document[_0x42348b(0x1f4)]('visitorCount')[_0x42348b(0x1ee)]='Visitor\x20Count:\x20'+await incrementVisitorCount()):document[_0x42348b(0x1f4)](_0x42348b(0x1f6))[_0x42348b(0x1ee)]=_0x42348b(0x1ea)+await getVisitorCount();}updateVisitorCount();</script>
+    </div>
+</body>
+</html>
