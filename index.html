@@ -27,10 +27,9 @@
 <body>
     <div class="profile">
         <h1>Name: sulfur</h1>
-		<p>Pronouns: she/it</p>
+		<p>Pronoun: she/they</p>
         <p id="time-ago">Born: </p><script>const birthday = Math.floor(new Date('2008-06-18').getTime() / 1000);function timeAgo(timestamp) {const now = Math.floor(Date.now() / 1000);const differenceInSeconds = now - timestamp;const yearsAgo = Math.floor(differenceInSeconds / (365 * 24 * 60 * 60));return `${yearsAgo} years ago`;}document.getElementById("time-ago").textContent += timeAgo(birthday);</script>
         <p id="cdtTime"></p><script>function updateCDTTime(){let now=new Date(),options={timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false},[date,time]=new Intl.DateTimeFormat('en-US',options).format(now).split(", ");document.getElementById("cdtTime").textContent=`Timezone: CDT (${date}, ${time})`;}setInterval(updateCDTTime,1000);updateCDTTime();</script>
-		<p>Discord Username: sulfur.shimazu</p>
 		<p>❤ Movies/Shows: MCU, LoL Arcane, Cyberpunk Edgerunners, Fight Club</p>
 		<p>❤ Games: Postal, Minecraft, Portal, Terraria, GB/GBC/GBA Emulation</p> 
 		<p>Languages: English / Python / AHK</p>
